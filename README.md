@@ -1,4 +1,4 @@
-# Constructing Population
+# Constructing The Population
 
 This code was developed for Life Time Affordable and Tennable City Housing (LATCH) project that was funded in part by the Australian Research Council, SJB Urban and the (Melbourne) Metropolitan Planning Authority through Linkage Project grant LP130100008.
 
@@ -118,7 +118,10 @@ Execute shell script in `buildpopulation/run`
 
 #### Individual Commands
 
-Above `run` folder contains a shell script that calls R scripts to preprcess ABS data, build maven project and execute jar files. Below are the steps to follow to build the population manually.
+Above `run` folder contains a shell script that calls R scripts to preprcess ABS data, build maven project and execute jar files. Below are the steps to follow to build the population manually. Further information is available in README files in each project directory.
+* `/buildpopulation/datapreprocessing/` - R scripts for preprocessing SA2 level population data csvs downloaded using ABS TableBuilder
+* `/buildpopulation/populationbuilder/latchpop/` - Java project for constructing the synthetic population
+* `/buildpopulation/populationbuilder/BuildingProperties/` - Java project for assiging dwelling properties to buildings in selecte area
 
 1. To preprocess ABS data, change directory to `buildpopulation/datapreprocessing/` and run below command,
 
@@ -144,11 +147,4 @@ Above `run` folder contains a shell script that calls R scripts to preprcess ABS
         > cd buildpopulation/populationbuilder/BuildingProperties
         > java -jar target/buildingproperties.jar Buildings.properties
 
-
-### 4. Rerun the commands in above Quick Run guide
-
-This will construct the new synthetic population. Further information is available in README files in each project directory
-
-  * `/buildpopulation/datapreprocessing/` - R scripts for preprocessing SA2 level population data csvs downloaded using ABS TableBuilder
-  * `/buildpopulation/populationbuilder/latchpop/` - Java project for constructing the synthetic population
-  * `/buildpopulation/populationbuilder/BuildingProperties/` - Java project for assiging dwelling properties to buildings in selecte area
+  

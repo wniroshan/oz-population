@@ -147,4 +147,7 @@ Above `run` folder contains a shell script that calls R scripts to preprcess ABS
         > cd buildpopulation/populationbuilder/BuildingProperties
         > java -jar target/buildingproperties.jar Buildings.properties
 
-  
+## Contributors
+* Bhagya Niroshan Wickramasinghe
+* Dr. Dhirendra Singh (RMIT)
+* Prof. Lin Padgham (RMIT)
